@@ -1,0 +1,17 @@
+Dependencies for Project 'PWM', Target 'PWM': (DO NOT MODIFY !)
+F (.\startup.s)(0x5198559A)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Luminary--pd "__UVISION_VERSION SETA 522"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x53E96406)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\.. --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Luminary-D__UVISION_VERSION="522" -Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x5900C508)
+F (.\PWM.c)(0x5900A15E)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\.. --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Luminary-D__UVISION_VERSION="522" -Drvmdk -DPART_LM4F120H5QR-o .\pwm.o --omf_browse .\pwm.crf --depend .\pwm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6E7B8)
+I (..\tm4c123gh6pm.h)(0x51D4D322)
+F (.\PWMtest.c)(0x5900C75D)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\.. --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Luminary-D__UVISION_VERSION="522" -Drvmdk -DPART_LM4F120H5QR-o .\pwmtest.o --omf_browse .\pwmtest.crf --depend .\pwmtest.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6E7B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F6E7B8)
+I (PLL.h)(0x5900C508)
+I (newpwm.h)(0x5900C6E0)
+I (..\tm4c123gh6pm.h)(0x51D4D322)
+F (.\newpwm.c)(0x5900C719)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\.. --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Luminary-D__UVISION_VERSION="522" -Drvmdk -DPART_LM4F120H5QR-o .\newpwm.o --omf_browse .\newpwm.crf --depend .\newpwm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6E7B8)
+I (..\tm4c123gh6pm.h)(0x51D4D322)
+F (.\newpwm.h)(0x5900C6E0)()
