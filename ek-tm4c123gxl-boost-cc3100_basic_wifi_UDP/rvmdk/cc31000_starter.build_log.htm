@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mahmoud khalid, ASU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+C:\ti\TivaWare_C_Series-2.1.4.178\examples\boards\CC31xxxx\ek-tm4c123gxl-boost-cc3100_basic_wifi_UDP\cc31000_starter.uvproj
+Project File Date:  04/22/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'cc31000_starter'
+compiling starter.c...
+..\cc3100\platform\ek-tm4c123gxl\board.h(76): warning:  #1295-D: Deprecated declaration GPIOB_intHandler - give arg types
+  void GPIOB_intHandler();
+..\cc3100\platform\ek-tm4c123gxl\board.h(89): warning:  #1295-D: Deprecated declaration CC3100_enable - give arg types
+  void CC3100_enable();
+..\cc3100\platform\ek-tm4c123gxl\board.h(102): warning:  #1295-D: Deprecated declaration CC3100_disable - give arg types
+  void CC3100_disable();
+..\cc3100\platform\ek-tm4c123gxl\board.h(115): warning:  #1295-D: Deprecated declaration CC3100_InterruptEnable - give arg types
+  void CC3100_InterruptEnable();
+..\cc3100\platform\ek-tm4c123gxl\board.h(128): warning:  #1295-D: Deprecated declaration CC3100_InterruptDisable - give arg types
+  void CC3100_InterruptDisable();
+..\cc3100\platform\ek-tm4c123gxl\board.h(141): warning:  #1295-D: Deprecated declaration stopWDT - give arg types
+  void stopWDT();
+..\cc3100\platform\ek-tm4c123gxl\board.h(154): warning:  #1295-D: Deprecated declaration initClk - give arg types
+  void initClk();
+..\cc3100\platform\ek-tm4c123gxl\board.h(165): warning:  #1295-D: Deprecated declaration MaskIntHdlr - give arg types
+  void MaskIntHdlr();
+..\cc3100\platform\ek-tm4c123gxl\board.h(176): warning:  #1295-D: Deprecated declaration UnMaskIntHdlr - give arg types
+  void UnMaskIntHdlr();
+..\cc3100\platform\ek-tm4c123gxl\board.h(189): warning:  #1295-D: Deprecated declaration UART1_intHandler - give arg types
+  void UART1_intHandler();
+..\cc3100\simplelink\include\device.h(536): warning:  #1295-D: Deprecated declaration sl_Task - give arg types
+  void sl_Task();
+starter.c(738): warning:  #550-D: variable "Status"  was set but never used
+    INT16             Status = 1;  // ok
+starter.c(791): warning:  #177-D: variable "data"  was declared but never referenced
+    UINT32            data;
+starter.c: 13 warnings, 0 errors
+compiling newpwm.c...
+newpwm.c(294): warning:  #1-D: last line of file ends without a newline
+  }
+newpwm.c: 1 warning, 0 errors
+linking...
+Program Size: Code=17076 RO-data=3992 RW-data=136 ZI-data=17944  
+After Build - User command #1: fromelf --bin --output .\rvmdk\cc31000_starter.bin .\rvmdk\cc31000_starter.axf
+".\rvmdk\cc31000_starter.axf" - 0 Error(s), 14 Warning(s).
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
