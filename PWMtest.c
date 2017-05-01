@@ -29,14 +29,14 @@ void WaitForInterrupt(void);  // low power mode
 void delay(unsigned long halfsecs);
 int main(void){
 		PLL_Init();                      // bus clock at 16 MHz
-  	PWM_Init_PA7(5000,250);         // 1ms / 20ms 
+  	PWM_Init_PF3(5000,250);         // 1ms / 20ms 
   while(1){
-		delay(10);
-		PWM_Duty_PA7(375);       // 1.5 ms 
-		delay(10);
-		PWM_Duty_PA7(500);       // 2 ms
-		delay(10);
-		PWM_Duty_PA7(250);     // 1 ms
+		delay(2);
+		PWM_Duty_PF3(375);       // 1.5 ms 
+		delay(2);
+		PWM_Duty_PF3(500);       // 2 ms
+		delay(2);
+		PWM_Duty_PF3(250);     // 1 ms
 
   }
 }

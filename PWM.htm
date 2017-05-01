@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\PWM.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\PWM.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Wed Apr 26 09:14:23 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Mon May 01 03:58:49 2017
 <BR><P>
 <H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -771,12 +771,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>PWM_Duty_PA7</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, newpwm.o(i.PWM_Duty_PA7))
+<P><STRONG><a name="[95]"></a>PWM_Duty_PF3</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, newpwm.o(i.PWM_Duty_PF3))
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[93]"></a>PWM_Init_PA7</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, newpwm.o(i.PWM_Init_PA7))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PWM_Init_PA7
+<P><STRONG><a name="[93]"></a>PWM_Init_PF3</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, newpwm.o(i.PWM_Init_PF3))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PWM_Init_PF3
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -786,10 +786,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[89]"></a>main</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, pwmtest.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main &rArr; PWM_Init_PA7
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main &rArr; PWM_Init_PF3
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Init_PA7
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Duty_PA7
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Init_PF3
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Duty_PF3
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLL_Init
 </UL>

@@ -39,6 +39,21 @@ void PWM_Init_PD1(uint16_t period, uint16_t duty);
 
 void PWM_Duty_PD1(uint16_t duty);
 
+void PWM_Init_PF0(uint16_t period, uint16_t duty);
+
+void PWM_Duty_PF0(uint16_t duty);
+
+void PWM_Init_PF1(uint16_t period, uint16_t duty);
+
+void PWM_Duty_PF1(uint16_t duty);
+
+void PWM_Init_PF2(uint16_t period, uint16_t duty);
+
+void PWM_Duty_PF2(uint16_t duty);
+void PWM_Init_PF3(uint16_t period, uint16_t duty);
+
+void PWM_Duty_PF3(uint16_t duty);
+	
 
 unsigned long map(float x);
 
