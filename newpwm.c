@@ -13,7 +13,7 @@
 void PWM_Init_PE5(uint16_t period, uint16_t duty){
    SYSCTL_RCGCPWM_R |= 0x01;             // 1) activate PWM0
   SYSCTL_RCGCGPIO_R |= 0x10;            // 2) activate port E
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
   GPIO_PORTE_AFSEL_R |= 0x20;           // enable alt funct on PE5
   GPIO_PORTE_PCTL_R &= ~0x0F00000;     // configure PE4 as PWM0
   GPIO_PORTE_PCTL_R |= 0x00400000;
@@ -73,7 +73,7 @@ void PWM_Duty_PB5(uint16_t duty){
 void PWM_Init_PD0(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x08;            // 2) activate port D
-   unsigned delay = SYSCTL_RCGCGPIO_R;
+   unsigned long delay = SYSCTL_RCGCGPIO_R;
   GPIO_PORTD_AFSEL_R |= 0x1;           // enable alt funct on PD0
   GPIO_PORTD_PCTL_R &= ~0x000000F;     // configure PD0 as PWM0
   GPIO_PORTD_PCTL_R |= 0x00000005;
@@ -100,7 +100,7 @@ void PWM_Duty_PD0(uint16_t duty){
 void PWM_Init_PD1(uint16_t period, uint16_t duty){
  	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x08;            // 2) activate port D
-   unsigned delay = SYSCTL_RCGCGPIO_R;
+   unsigned long delay = SYSCTL_RCGCGPIO_R;
   GPIO_PORTD_AFSEL_R |= 0x2;           // enable alt funct on PD1
   GPIO_PORTD_PCTL_R &= ~0x00000F0;     // configure PD1 as PWM0
   GPIO_PORTD_PCTL_R |= 0x00000050;
@@ -128,7 +128,7 @@ void PWM_Init_PA6(uint16_t period, uint16_t duty){
 	
  	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x01;            // 2) activate port A
- unsigned delay = SYSCTL_RCGCGPIO_R;
+ unsigned long delay = SYSCTL_RCGCGPIO_R;
   GPIO_PORTA_AFSEL_R |= 0x40;           // enable alt funct on PA6
   GPIO_PORTA_PCTL_R &= ~0x0F000000;     // configure PA6 as PWM1
   GPIO_PORTA_PCTL_R |=  0x05000000;
@@ -155,7 +155,7 @@ void PWM_Duty_PA6(uint16_t duty){
 void PWM_Init_PA7(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x01;            // 2) activate port A
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
   GPIO_PORTA_AFSEL_R |= 0x80;           // enable alt funct on PA6
   GPIO_PORTA_PCTL_R &= ~0xF0000000;     // configure PD1 as PWM0
   GPIO_PORTA_PCTL_R |=  0x50000000;
@@ -180,7 +180,7 @@ void PWM_Duty_PA7(uint16_t duty){
 void PWM_Init_PF0(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x20;            // 2) activate port F
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
 	GPIO_PORTF_LOCK_R = GPIO_LOCK_KEY;
 	GPIO_PORTF_CR_R |= 0x01;
   GPIO_PORTF_AFSEL_R |= 0x1;           // enable alt funct on PA6
@@ -207,7 +207,7 @@ void PWM_Duty_PF0(uint16_t duty){
 void PWM_Init_PF1(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x20;            // 2) activate port F
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
 	GPIO_PORTF_LOCK_R = GPIO_LOCK_KEY;
 	GPIO_PORTF_CR_R |= 0x02;
   GPIO_PORTF_AFSEL_R |= 0x2;           // enable alt funct on PF1
@@ -234,7 +234,7 @@ void PWM_Duty_PF1(uint16_t duty){
 void PWM_Init_PF2(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x20;            // 2) activate port F
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
 	GPIO_PORTF_LOCK_R = GPIO_LOCK_KEY;
 	GPIO_PORTF_CR_R |= 0x04;
   GPIO_PORTF_AFSEL_R |= 0x4;           // enable alt funct on PF2
@@ -261,7 +261,7 @@ void PWM_Duty_PF2(uint16_t duty){
 void PWM_Init_PF3(uint16_t period, uint16_t duty){
 	SYSCTL_RCGCPWM_R |= SYSCTL_RCGCPWM_R1;             // 1) activate PWM1
   SYSCTL_RCGCGPIO_R |= 0x20;            // 2) activate port F
-  unsigned delay = SYSCTL_RCGCGPIO_R;
+  unsigned long delay = SYSCTL_RCGCGPIO_R;
 	GPIO_PORTF_LOCK_R = GPIO_LOCK_KEY;
 	GPIO_PORTF_CR_R |= 0x08;
   GPIO_PORTF_AFSEL_R |= 0x8;           // enable alt funct on PF3
