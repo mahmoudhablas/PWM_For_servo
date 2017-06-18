@@ -26,9 +26,9 @@ void PWM_Init_PE5(uint16_t period, uint16_t duty){
   PWM0_2_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM0_2_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM0_2_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM0_ENABLE_R |= 0x00000020;          // enable P?4/M0PWM
+  PWM0_ENABLE_R |= 0x00000020;          // enable M0PWM5
 }
-// change duty cycle of PB6
+// change duty cycle of PE5
 // duty is number of PWM clock cycles output is high  (2<=duty<=period-1)
 void PWM_Duty_PE5(uint16_t duty){
   PWM0_2_CMPB_R = duty - 1;             // 6) count value when output rises
@@ -57,9 +57,9 @@ void PWM_Init_PB5(uint16_t period, uint16_t duty){
   PWM0_1_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM0_1_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM0_1_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM0_ENABLE_R |= 0x00000008;          // enable PB4/M0PWM2
+  PWM0_ENABLE_R |= 0x00000008;          // enable M0PWM3
 }
-// change duty cycle of PB6
+// change duty cycle of PB5
 // duty is number of PWM clock cycles output is high  (2<=duty<=period-1)
 void PWM_Duty_PB5(uint16_t duty){
   PWM0_1_CMPB_R = duty - 1;             // 6) count value when output rises
@@ -86,7 +86,7 @@ void PWM_Init_PD0(uint16_t period, uint16_t duty){
   PWM1_0_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_0_CMPA_R = duty - 1;             // 6) count value when output rises
   PWM1_0_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000001;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000001;          // enable M1PWM0
 }
 
 void PWM_Duty_PD0(uint16_t duty){
@@ -113,7 +113,7 @@ void PWM_Init_PD1(uint16_t period, uint16_t duty){
   PWM1_0_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_0_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM1_0_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000002;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000002;          // enable M1PWM1
 }
 
 void PWM_Duty_PD1(uint16_t duty){
@@ -168,7 +168,7 @@ void PWM_Init_PA7(uint16_t period, uint16_t duty){
   PWM1_1_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_1_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM1_1_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000008;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000008;          // enable PA7//M0PWM3
 }
 
 void PWM_Duty_PA7(uint16_t duty){
@@ -195,7 +195,7 @@ void PWM_Init_PF0(uint16_t period, uint16_t duty){
   PWM1_2_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_2_CMPA_R = duty - 1;             // 6) count value when output rises
   PWM1_2_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000010;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000010;          // enable M1PWM4
 }
 
 void PWM_Duty_PF0(uint16_t duty){
@@ -222,7 +222,7 @@ void PWM_Init_PF1(uint16_t period, uint16_t duty){
   PWM1_2_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_2_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM1_2_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000020;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000020;          // enable M1PWM5
 }
 
 void PWM_Duty_PF1(uint16_t duty){
@@ -249,7 +249,7 @@ void PWM_Init_PF2(uint16_t period, uint16_t duty){
   PWM1_3_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_3_CMPA_R = duty - 1;             // 6) count value when output rises
   PWM1_3_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000040;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000040;          // enable M1PWM6
 }
 
 void PWM_Duty_PF2(uint16_t duty){
@@ -276,7 +276,7 @@ void PWM_Init_PF3(uint16_t period, uint16_t duty){
   PWM1_3_LOAD_R = period - 1;           // 5) cycles needed to count down to 0
   PWM1_3_CMPB_R = duty - 1;             // 6) count value when output rises
   PWM1_3_CTL_R |= 0x00000001;           // 7) start PWM0
-  PWM1_ENABLE_R |= 0x0000080;          // enable PB4/M0PWM2
+  PWM1_ENABLE_R |= 0x0000080;          // enable M1PWM7
 }
 
 void PWM_Duty_PF3(uint16_t duty){
